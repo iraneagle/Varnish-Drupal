@@ -4,9 +4,8 @@ You need to use Drupal varnish-7.x-1.x-dev (Varnish 1.x-dev version compatible w
 
 As per the documentation on drupal.org/project/varnish you should add something like the following to your settings.php file:
 
-/**
- * Add Varnish Caching.
- */
+/** Add Varnish Caching. **/
+
 $conf['varnish_version'] = 4;
 
 // Tell Drupal it's behind a proxy.
