@@ -44,7 +44,7 @@ sub vcl_recv {
       # Not from an allowed IP? Then die with an error.
       return (synth(405, "Forbidden - Not allowed."));
     }
-    # If you got this stage (and didn't error out above), purge the cached result
+    # If you got this stage (and didn't error out above), purge the cached result.
     return (purge);
   }
 
